@@ -1,3 +1,10 @@
+/*********************************************************************
+; Project:          Metroid Clone for Commander X16
+; File:             ym2151.asm
+; Author:           Matt Heffernan
+;                   Kick Assembler Port By Anthony Rufrano (paradoxnj)
+; Description:      Yamaha YM2151 Sound Chip
+**********************************************************************/
 #importonce
 
 #import "x16.inc"

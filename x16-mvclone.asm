@@ -43,7 +43,6 @@ mvclone_main: {
         rts
 }
 
-
 bmp_file:       
     .text "FF1TS1.X16"
 bmp_file_end:

@@ -1,3 +1,10 @@
+/*********************************************************************
+; Project:          Metroid Clone for Commander X16
+; File:             x16.inc
+; Author:           Matt Heffernan
+; 					Kick Assembler port By Anthony Rufrano (paradoxnj)
+; Description:      Commander X16 Constants and Macros
+**********************************************************************/
 #importonce
 
 .namespace CX16 {
