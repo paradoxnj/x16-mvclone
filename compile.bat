@@ -1,6 +1,6 @@
 @echo off
 
-SET PRGNAME=X16-METROID
+SET PRGNAME=X16-MVCLONE
 
 @echo Cleaning up
 if exist .\bin\*.prg del /q .\bin\*.prg
@@ -14,7 +14,7 @@ if exist ..\..\emulator\%PRGNAME%.prg del /q ..\..\emulator\%PRGNAME%.prg
 
 @echo Compiling sources
 ::..\..\tools\acme\acme.exe -f cbm --cpu 65c02 -o %PRGNAME%.PRG -l %PRGNAME%.lst %PRGNAME%.asm
-java -jar ..\..\tools\KickAssembler\KickAss.jar -debug -bytedump -showmem -maxAddr 131072 -odir .\bin x16-metroid.asm 
+java -jar ..\..\tools\KickAssembler\KickAss.jar -debug -bytedump -showmem -maxAddr 131072 -odir .\bin %PRGNAME%.asm 
 if not exist .\bin\%PRGNAME%.prg goto END
 
 @echo Copy prg to emulator

@@ -1,12 +1,12 @@
 /*********************************************************************
 ; Project:          Metroid Clone for Commander X16
-; File:             x16-metroid.asm
+; File:             x16-mvclone.asm
 ; Author:           Anthony Rufrano (paradoxnj)
 ; Description:      Main entry point
 **********************************************************************/
 .cpu _65c02
 
-BasicUpstart2(metroid_main)
+BasicUpstart2(mvclone_main)
 
 #import "x16.inc"
 
@@ -16,7 +16,7 @@ BasicUpstart2(metroid_main)
 
 *=* "Program"
 
-metroid_main: {
+mvclone_main: {
         stz CX16.VERA_ctrl
 
         loadVRAM(bmp_pal, bmp_pal_end-bmp_pal, CX16.VRAM_palette)
